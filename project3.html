@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nature Explorer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f1f8e9;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #198754;
+            color: white;
+        }
+
+        .nature-card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .nature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .nature-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #14532d;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Full Width Header -->
+    <header class="header text-center py-5 px-3">
+        <h1 class="display-4 fw-bold">Welcome to Nature Explorer</h1>
+
+        <p class="lead mb-0">
+            Discover the Beauty of Nature and Protect Our Planet!
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Nature Explorer</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nature">Nature</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Centered Content Area -->
+    <main class="container my-5" id="home">
+
+        <div class="text-center mb-5">
+            <h2 class="text-success fw-bold">Explore the Natural World</h2>
+
+            <p class="text-muted mt-3">
+                Nature gives us fresh air, clean water, beautiful forests,
+                and amazing wildlife. Let's explore and protect it!
+            </p>
+        </div>
+
+        <!-- Nature Information Cards -->
+        <div class="row g-4" id="nature">
+
+            <!-- Forest Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card nature-card border-success border-2 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600"
+                        class="card-img-top" alt="Beautiful green forest">
+
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-success fw-bold">
+                            Green Forests
+                        </h4>
+
+                        <p class="card-text text-secondary">
+                            Forests provide oxygen, shelter for wildlife,
+                            and help maintain the balance of nature.
+                        </p>
+
+                        <button class="btn btn-success">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mountains Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card nature-card border-primary border-2 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600"
+                        class="card-img-top" alt="Beautiful mountains">
+
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-primary fw-bold">
+                            Beautiful Mountains
+                        </h4>
+
+                        <p class="card-text text-secondary">
+                            Mountains are home to many plants and animals.
+                            They also provide fresh water to millions of people.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ocean Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card nature-card border-info border-2 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600"
+                        class="card-img-top" alt="Blue ocean waves">
+
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-info fw-bold">
+                            Blue Oceans
+                        </h4>
+
+                        <p class="card-text text-secondary">
+                            Oceans support marine life and help regulate
+                            the Earth's climate.
+                        </p>
+
+                        <button class="btn btn-info text-white">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wildlife Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card nature-card border-warning border-2 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600"
+                        class="card-img-top" alt="Wild fox">
+
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-warning fw-bold">
+                            Amazing Wildlife
+                        </h4>
+
+                        <p class="card-text text-secondary">
+                            Wildlife keeps ecosystems healthy.
+                            We should protect animals and their habitats.
+                        </p>
+
+                        <button class="btn btn-warning">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Waterfalls Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card nature-card border-info border-2 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=600"
+                        class="card-img-top" alt="Beautiful waterfall">
+
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-info fw-bold">
+                            Beautiful Waterfalls
+                        </h4>
+
+                        <p class="card-text text-secondary">
+                            Waterfalls are beautiful natural wonders
+                            that remind us of the importance of water.
+                        </p>
+
+                        <button class="btn btn-info text-white">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flowers Card -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card nature-card border-danger border-2 shadow-sm h-100">
+
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600"
+                        class="card-img-top" alt="Colorful flowers">
+
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-danger fw-bold">
+                            Colorful Flowers
+                        </h4>
+
+                        <p class="card-text text-secondary">
+                            Flowers add beauty to nature and provide
+                            food for bees, butterflies, and other insects.
+                        </p>
+
+                        <button class="btn btn-danger">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Nature Message -->
+        <div class="bg-success text-white text-center p-5 mt-5 rounded">
+            <h2 class="fw-bold">Save Nature, Save Life!</h2>
+
+            <p class="lead">
+                Plant trees, save water, reduce pollution,
+                and protect wildlife.
+            </p>
+
+            <button class="btn btn-light text-success fw-bold">
+                Join the Green Mission
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5" id="contact">
+
+        <h5 class="fw-bold">Nature Explorer</h5>
+
+        <p class="mb-1">
+            Protect Nature for a Better Future.
+        </p>
+
+        <small>
+            &copy; 2026 Nature Explorer. All Rights Reserved.
+        </small>
+
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

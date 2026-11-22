@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adventure Park Challenge</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0fff4;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #00b894, #0984e3);
+            color: white;
+            padding: 65px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .adventure-card {
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .adventure-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .section-title {
+            color: #087f5b;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #075e54;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                Adventure Park
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#challenge">Challenge</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+
+            <h1>Adventure Park Challenge!</h1>
+
+            <h3><i>Explore, Enjoy and Experience!</i></h3>
+
+            <p class="lead">
+                Welcome to the most exciting adventure park.
+                Get ready for fun, thrill and unforgettable memories!
+            </p>
+
+            <button class="btn btn-warning btn-lg">
+                Start Your Adventure
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="container my-5">
+
+        <h2 class="section-title text-center">
+            About Our Adventure Park
+        </h2>
+
+        <p class="text-center mt-3">
+            Our adventure park is a perfect place for
+            <b>fun, excitement and learning</b>.
+            Enjoy amazing activities with your friends and family.
+        </p>
+
+        <p class="text-center">
+            We provide <strong>safe and exciting experiences</strong>
+            for everyone.
+        </p>
+
+        <p class="text-center">
+            <mark>Adventure is waiting for you!</mark>
+        </p>
+
+    </section>
+
+    <!-- Activities Section -->
+    <section class="container my-5" id="activities">
+
+        <h2 class="section-title text-center mb-4">
+            Our Exciting Activities
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Activity 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card adventure-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h3 class="text-primary">Mountain Climbing</h3>
+
+                        <h5><i>Reach New Heights!</i></h5>
+
+                        <p>
+                            Challenge yourself by climbing
+                            exciting artificial mountains.
+                        </p>
+
+                        <p><strong>Difficulty:</strong> Medium</p>
+
+                        <button class="btn btn-primary">
+                            Explore
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card adventure-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h3 class="text-success">Zip Lining</h3>
+
+                        <h5><em>Fly Through the Sky!</em></h5>
+
+                        <p>
+                            Enjoy an amazing flying experience
+                            above the beautiful park.
+                        </p>
+
+                        <p><strong>Difficulty:</strong> Easy</p>
+
+                        <button class="btn btn-success">
+                            Explore
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card adventure-card shadow h-100">
+                    <div class="card-body text-center">
+                        <h3 class="text-danger">Water Rides</h3>
+
+                        <h5><u>Splash into Fun!</u></h5>
+
+                        <p>
+                            Enjoy refreshing water rides
+                            and exciting slides.
+                        </p>
+
+                        <p><strong>Difficulty:</strong> Easy</p>
+
+                        <button class="btn btn-danger">
+                            Explore
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section class="container my-5 text-center" id="challenge">
+
+        <h2 class="section-title">The Ultimate Challenge</h2>
+
+        <h4 class="mt-3">
+            Are You Ready for the Adventure?
+        </h4>
+
+        <p>
+            Complete all three activities and become an
+            <b>Adventure Champion!</b>
+        </p>
+
+        <blockquote class="blockquote">
+            <p>
+                "Life is either a daring adventure or nothing at all."
+            </p>
+        </blockquote>
+
+        <p>
+            <small>Believe in yourself and never stop exploring!</small>
+        </p>
+
+        <button class="btn btn-warning btn-lg">
+            Join the Challenge
+        </button>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-1">
+            &copy; 2026 Adventure Park Challenge
+        </p>
+
+        <small>Designed using HTML, CSS and Bootstrap 5.</small>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
